@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,
+        initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css%22%3E">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Pokedex</h1>
+            <div class="search-container">
+                <form name="pokename" onsubmit="return false" >
+                  <input type="text" name="search" id="searchbar" placeholder="Search.." />
+                  <button type="submit" onclick="searchPoke()"><i class="fa fa-search"></i></button>
+                  <button onclick="reset2()"><i class="fa fa-refresh"></i></button>
+                </form>
+            </div>
+            <ol id = "pokedex"></ol>   
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
